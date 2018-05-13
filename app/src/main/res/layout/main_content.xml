@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  tools:context="ir.ali3nti.digikala.MainActivity">
+
+
+  <include layout="@layout/toolbar" android:id="@+id/toolbar"/>
+
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+      <com.daimajia.slider.library.SliderLayout
+        android:id="@+id/slider"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        />
+
+      <LinearLayout
+        android:id="@+id/btn_showallproduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="6dp"
+        android:background="@drawable/category"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="نمایش لیست محصولات"
+          android:textColor="#fff"/>
+
+        <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_margin="5dp"
+          android:src="@drawable/ic_list_black_24dp"/>
+      </LinearLayout>
+
+
+      <include
+        android:id="@+id/offer_content"
+        layout="@layout/offer_content">
+
+      </include>
+
+      <HorizontalScrollView
+        android:id="@+id/scroller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="rtl"
+        android:scrollbars="none"
+        tools:ignore="UnusedAttribute">
+
+        <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:orientation="horizontal">
+
+          <include layout="@layout/cardview"/>
+
+          <include layout="@layout/cardview"/>
+
+          <include layout="@layout/cardview"/>
+
+          <include layout="@layout/cardview"/>
+
+          <include layout="@layout/cardview"/>
+
+          <include layout="@layout/cardview"/>
+
+        </LinearLayout>
+
+
+      </HorizontalScrollView>
+
+      <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baner"
+        android:scaleType="fitStart"
+        android:layout_marginTop="8dp"/>
+      <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baner"
+        android:scaleType="fitStart"
+        android:layout_marginTop="8dp"/>
+
+
+    </LinearLayout>
+
+  </ScrollView>
+</LinearLayout>

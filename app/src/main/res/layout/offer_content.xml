@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+  android:id="@+id/offer_content">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:orientation="horizontal">
+
+    <LinearLayout
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:padding="10dp"
+      android:orientation="horizontal"
+      android:layout_weight="1">
+
+      <TextView
+        android:id="@+id/timer_h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="08"
+        android:padding="4dp"
+        android:gravity="center"
+        android:background="@drawable/timer"
+        android:textColor="#fff"
+        android:textSize="18sp"/>
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":"
+        android:textColor="#000"
+        android:padding="1dp"
+        android:gravity="center"
+        android:textSize="18sp"/>
+      <TextView
+        android:id="@+id/timer_m"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="59"
+        android:padding="4dp"
+        android:gravity="center"
+        android:background="@drawable/timer"
+        android:textColor="#fff"
+        android:textSize="18sp"/>
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":"
+        android:textColor="#000"
+        android:padding="1dp"
+        android:gravity="center"
+        android:textSize="18sp"/>
+      <TextView
+        android:id="@+id/timer_s"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20"
+        android:padding="4dp"
+        android:gravity="center"
+        android:background="@drawable/timer"
+        android:textColor="#fff"
+        android:textSize="18sp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:layout_weight="1"
+      android:gravity="right"
+      android:orientation="horizontal"
+      android:padding="10dp">
+
+      <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="شگفت‌انگیز"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"/>
+
+      <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="پیشنهاد  "
+        android:textSize="18sp"/>
+    </LinearLayout>
+
+  </LinearLayout>
+</LinearLayout>

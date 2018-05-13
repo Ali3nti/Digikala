@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context="ir.ali3nti.digikala.LoginActivity">
+
+  <include
+    android:id="@+id/toolbar"
+    layout="@layout/toolbar"/>
+
+
+  <LinearLayout
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="48dp"
+    android:layout_marginRight="23dp"
+    android:layout_marginLeft="23dp"
+    android:orientation="vertical"
+    app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+    <android.support.design.widget.TextInputLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+
+      <EditText
+        android:id="@+id/edt_phone"
+        android:inputType="phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:imeOptions="actionNext"
+        android:singleLine="true"
+        android:nextFocusForward="@+id/edt_password"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:drawableRight="@drawable/ic_phone_black_24dp"
+        android:drawablePadding="16dp"
+        android:hint="شماره موبایل"
+        android:textSize="14dp"/>
+
+
+    </android.support.design.widget.TextInputLayout>
+  </LinearLayout>
+
+
+  <LinearLayout
+    android:id="@+id/linearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:layout_marginRight="23dp"
+    android:layout_marginLeft="23dp"
+    android:orientation="vertical"
+    app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+    <android.support.design.widget.TextInputLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+
+      <EditText
+        android:id="@+id/edt_password"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:drawableRight="@drawable/ic_lock_black_24dp"
+        android:drawablePadding="16dp"
+        android:hint="کلمه عبور"
+        android:textSize="14dp"/>
+
+
+    </android.support.design.widget.TextInputLayout>
+  </LinearLayout>
+
+  <LinearLayout
+    android:id="@+id/linearLayout_showPass"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="right"
+    android:layout_marginRight="38dp"
+    android:layout_marginTop="16dp"
+    android:orientation="horizontal"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/txt_showPass"
+      android:text="نمایش کلمه عبور"
+      android:textSize="14dp"/>
+
+    <android.support.v7.widget.AppCompatCheckBox
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/ckb_showpass"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/linearLayout2"/>
+
+
+  </LinearLayout>
+
+  <TextView
+    android:id="@+id/txt_forgetPass"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="32dp"
+    android:gravity="center"
+    android:text="کلمه عبورم را فراموش کرده ام!"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/linearLayout_showPass"/>
+
+  <TextView
+    android:id="@+id/txt_signUp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="32dp"
+    android:gravity="center"
+    android:text="ثبت نام در دیجی‌کالا"
+    android:textColor="@color/digiGreen"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/txt_forgetPass"/>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:background="#3086e2"
+    android:id="@+id/btn_login"
+    android:gravity="center"
+    app:layout_constraintBottom_toBottomOf="parent">
+
+
+    <ImageView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginRight="6dp"
+      android:src="@drawable/ic_keyboard_arrow_left_white_24dp"/>
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="ورود به دیجی‌کالا"
+      android:textColor="#fff"/>
+
+
+  </LinearLayout>
+</android.support.constraint.ConstraintLayout>

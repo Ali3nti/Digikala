@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content">
+
+  <ImageView
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="@color/colorPrimary"/>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:layout_marginRight="10dp"
+    android:padding="6dp"
+    android:gravity="right"
+    android:orientation="horizontal"
+    app:layout_constraintBottom_toBottomOf="parent">
+
+
+    <TextView
+      android:id="@+id/txt_header"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="2dp"
+      android:layout_marginRight="4dp"
+      android:text="ورود و ثبت نام"
+      android:textColor="#fff"/>
+
+    <ImageView
+      android:id="@+id/img_header"
+      android:layout_gravity="center"
+      android:layout_width="18dp"
+      android:layout_height="18dp"
+      android:src="@drawable/ic_lock_white_24dp"/>
+
+  </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
